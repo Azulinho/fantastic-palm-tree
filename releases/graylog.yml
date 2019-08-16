@@ -11,6 +11,7 @@ spec:
     git: https://github.com/helm/charts.git
     ref: master
     path: stable/graylog
+    git-timeout: 10
   values:
     tags:
       install-mongodb: true
