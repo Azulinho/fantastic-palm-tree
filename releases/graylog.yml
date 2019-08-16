@@ -1,0 +1,23 @@
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: graylog-dev
+  namespace: dev
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: glob:dev-*
+spec:
+  releaseName: graylog-dev
+  chart:
+    git: https://github.com/helm/charts.git
+    ref: master
+    path: stable/graylog
+  values:
+    tags:
+      install-mongodb: true
+      install-elasticsearch: true
+    graylog:
+      mongodb:
+        uri: "mongodb://mongodb-mongodb-replicaset-0.mongodb-mongodb-replicaset.graylog.svc.cluster.local:27017/graylog?replicaSet=rs0"
+      elasticsearch:
+        hosts: "http://elasticsearch-client.graylog.svc.cluster.local:9200"
