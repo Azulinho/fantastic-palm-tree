@@ -16,6 +16,8 @@ spec:
       install-mongodb: true
       install-elasticsearch: true
     graylog:
+      persistence:
+        enabled: false
       mongodb:
         uri: "mongodb://mongodb-mongodb-replicaset-0.mongodb-mongodb-replicaset.graylog.svc.cluster.local:27017/graylog?replicaSet=rs0"
       elasticsearch:
