@@ -13,8 +13,8 @@ spec:
     path: stable/graylog
   values:
     tags:
-      install-mongodb: true
-      install-elasticsearch: true
+      install-mongodb: false
+      install-elasticsearch: false
     graylog:
       persistence:
         enabled: false
