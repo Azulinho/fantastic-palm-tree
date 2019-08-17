@@ -10,7 +10,8 @@ spec:
   chart:
     git: https://github.com/helm/charts.git
     ref: master
-    path: stable/mongodb
+    path: stable/mongodb-replicaset
   values:
-    persistence:
+    replicas: 1
+    persistentVolume:
       enabled: false
