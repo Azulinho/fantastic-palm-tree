@@ -13,6 +13,9 @@ spec:
     path: elasticsearch
   values:
     appVersion: "6.7.0"
+    image:
+      repository: "docker.elastic.co/elasticsearch/elasticsearch:"
+      tag: "6.7.0"
     replicas: 1
     persistence:
       enabled: false
