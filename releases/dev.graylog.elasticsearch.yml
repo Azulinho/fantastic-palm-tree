@@ -8,9 +8,9 @@ metadata:
 spec:
   releaseName: dev-graylog-elasticsearch
   chart:
-    git: https://helm.elastic.co
+    git: https://github.com/elastic/helm-charts.git
     ref: master
-    path: elastic/elasticsearch
+    path: /elasticsearch
   values:
     persistence:
       enabled: false
