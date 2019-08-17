@@ -10,7 +10,7 @@ spec:
   chart:
     git: https://github.com/elastic/helm-charts.git
     ref: master
-    path: /elasticsearch
+    path: elasticsearch
   values:
     persistence:
       enabled: false
