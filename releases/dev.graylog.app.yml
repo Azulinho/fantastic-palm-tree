@@ -16,6 +16,10 @@ spec:
       install-mongodb: false
       install-elasticsearch: false
     graylog:
+      ingress:
+        enabled: true
+        hosts:
+          - graylog.kubernetes.toaster.core-vpn
       replicas: 1
       persistence:
         enabled: false
