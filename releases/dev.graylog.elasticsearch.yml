@@ -13,8 +13,6 @@ spec:
     path: elasticsearch
   values:
     appVersion: "6.7.0"
-    image:
-      tag: "6.7.0"
     replicas: 1
     persistence:
       enabled: false
