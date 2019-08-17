@@ -16,6 +16,7 @@ spec:
       install-mongodb: false
       install-elasticsearch: false
     graylog:
+      replicas: 1
       persistence:
         enabled: false
       mongodb:
