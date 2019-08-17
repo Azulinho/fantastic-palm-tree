@@ -16,4 +16,4 @@ spec:
       enabled: false
     resources:
       requests:
-        memory: 256m
+        memory: 512m
