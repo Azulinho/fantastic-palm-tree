@@ -15,7 +15,7 @@ spec:
     esMajorVersion: 6
     image: "docker.elastic.co/elasticsearch/elasticsearch"
     imageTag: "6.8.1"
-    replicas: 1
+    replicas: 3
     persistence:
       enabled: false
     resources:
