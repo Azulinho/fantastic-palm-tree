@@ -12,10 +12,9 @@ spec:
     ref: master
     path: elasticsearch
   values:
-    appVersion: "6.7.0"
-    image:
-      repository: "docker.elastic.co/elasticsearch/elasticsearch:"
-      tag: "6.7.0"
+    esMajorVersion: 6
+    image: "docker.elastic.co/elasticsearch/elasticsearch"
+    imageTag: "6.8.1"
     replicas: 1
     persistence:
       enabled: false
