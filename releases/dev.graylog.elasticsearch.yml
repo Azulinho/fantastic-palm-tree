@@ -17,3 +17,5 @@ spec:
     resources:
       requests:
         memory: 512m
+    esJavaOpts: "-Xmx512m -Xms512m"
+
