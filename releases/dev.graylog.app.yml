@@ -1,5 +1,5 @@
 apiVersion: flux.weave.works/v1beta1
-kind: HelmRelease
+# kind: HelmRelease
 metadata:
   name: dev-graylog-graylog
   namespace: dev
@@ -19,6 +19,6 @@ spec:
       persistence:
         enabled: false
       mongodb:
-        uri: "mongodb://mongodb-mongodb-replicaset-0.mongodb-mongodb-replicaset.graylog.svc.cluster.local:27017/graylog?replicaSet=rs0"
+        uri: "mongodb://dev-graylog-mongodb:27017/graylog?replicaSet=rs0"
       elasticsearch:
         hosts: "http://elasticsearch-client.graylog.svc.cluster.local:9200"
