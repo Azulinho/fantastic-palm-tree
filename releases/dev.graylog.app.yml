@@ -19,6 +19,6 @@ spec:
       persistence:
         enabled: false
       mongodb:
-        uri: "mongodb://dev-graylog-mongodb:27017/graylog?replicaSet=rs0"
+        uri: "mongodb://dev-graylog-mongodb.dev.svc.cluster.local:27017/graylog?replicaSet=rs0"
       elasticsearch:
-        hosts: "http://elasticsearch-client.graylog.svc.cluster.local:9200"
+        hosts: "http://elasticsearch-master.dev.svc.cluster.local:9200"
