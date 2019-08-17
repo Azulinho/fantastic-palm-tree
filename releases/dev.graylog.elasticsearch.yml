@@ -12,6 +12,7 @@ spec:
     ref: master
     path: elasticsearch
   values:
+    replicas: 1
     persistence:
       enabled: false
     resources:
