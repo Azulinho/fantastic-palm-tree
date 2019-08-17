@@ -1,0 +1,16 @@
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: dev-graylog-elasticsearch
+  namespace: dev
+  annotations:
+    flux.weave.works/automated: "true"
+spec:
+  releaseName: dev-graylog-elasticsearch
+  chart:
+    git: https://helm.elastic.co
+    ref: master
+    path: elastic/elasticsearch
+  values:
+    persistence:
+      enabled: false
