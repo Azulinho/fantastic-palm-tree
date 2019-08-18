@@ -22,7 +22,6 @@ spec:
         GRAYLOG_WEB_LISTEN_URI: 'http://0.0.0.0:9000/'
         GRAYLOG_WEB_ENDPOINT_URL: 'http://graylog.kubernetes.toaster.core-vpn/'
       rootPassword: '!Password123456789'
-      config: ''
       input:
         udp:
           service:
