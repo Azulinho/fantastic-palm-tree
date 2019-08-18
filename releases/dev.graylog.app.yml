@@ -16,6 +16,20 @@ spec:
       install-mongodb: false
       install-elasticsearch: false
     graylog:
+      env:
+        GRAYLOG_WEB_ENABLE: 'true'
+        GRAYLOG_REST_LISTEN_URI: 'http://dev-graylog-app.dev.svc.cluster.local:9000/api'
+        GRAYLOG_WEB_LISTEN_URI: 'http://0.0.0.0:9000/'
+        GRAYLOG_WEB_ENDPOINT_URL: 'http://graylog.kubernetes.toaster.core-vpn/'
+      rootPassword: 'admin'
+      config: ''
+      input:
+        udp:
+          service:
+            type: ClusterIP
+          ports:
+            - name: syslog
+              port: 9514
       ingress:
         enabled: true
         hosts:
