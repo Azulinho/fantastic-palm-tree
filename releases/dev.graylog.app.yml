@@ -24,19 +24,13 @@ spec:
         FORCE_ROLLOUT: '1'
       rootPassword: '!Password123456789'
       input:
-        tcp:
+        udp:
           service:
             type: NodePort
             nodePort: 30000
           ports:
             - name: gelf1
               port: 12222
-        udp:
-          service:
-            type: ClusterIP
-          ports:
-            - name: syslog
-              port: 9514
       ingress:
         enabled: true
         hosts:
