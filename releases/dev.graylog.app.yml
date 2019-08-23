@@ -23,6 +23,12 @@ spec:
         GRAYLOG_WEB_ENDPOINT_URL: 'http://graylog.kubernetes.toaster.azulinho.com/'
       rootPassword: '!Password123456789'
       input:
+        tcp:
+          service:
+            type: NodePort
+          ports:
+            - name: gelf1
+              port: 12222
         udp:
           service:
             type: ClusterIP
