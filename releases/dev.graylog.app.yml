@@ -26,7 +26,7 @@ spec:
         tcp:
           service:
             type: NodePort
-            nodePort: 12222
+            nodePort: 30000
           ports:
             - name: gelf1
               port: 12222
