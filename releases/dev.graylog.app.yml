@@ -21,7 +21,7 @@ spec:
         GRAYLOG_REST_LISTEN_URI: 'http://dev-graylog-app.dev.svc.cluster.local:9000/api'
         GRAYLOG_WEB_LISTEN_URI: 'http://0.0.0.0:9000/'
         GRAYLOG_WEB_ENDPOINT_URL: 'http://graylog.kubernetes.toaster.azulinho.com/'
-        FORCE_ROLLOUT: '1'
+        FORCE_ROLLOUT: '2'
       rootPassword: '!Password123456789'
       input:
         udp:
