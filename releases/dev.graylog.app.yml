@@ -27,7 +27,7 @@ spec:
         udp:
           service:
             type: NodePort
-            nodePort: 30000
+            nodePort: 30001
           ports:
             - name: gelf1
               port: 12222
