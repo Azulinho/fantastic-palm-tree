@@ -14,4 +14,6 @@ spec:
   values:
     replicas: 1
     persistentVolume:
-      enabled: false
+      enabled: true
+      storageClass: 'nfs'
+      size: '1Gi'
