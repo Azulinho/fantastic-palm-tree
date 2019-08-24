@@ -1,0 +1,23 @@
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: dev-nfs-server-provisioner
+  namespace: dev
+  annotations:
+    flux.weave.works/automated: "true"
+spec:
+  releaseName: dev-nfs-server-provisioner
+  chart:
+    git: https://github.com/helm/charts.git
+    ref: master
+    path: stable/nfs-server-provisioner
+  values:
+    persistence:
+      enabled: true
+      storageClass: "-"
+      size: 15Gi
+    storageClass:
+      defaultClass: true
+
+    nodeSelector:
+      kubernetes.io/hostname: k8s-node1.core-vpn
