@@ -18,3 +18,8 @@ spec:
       enabled: true
       storageClass: 'nfs'
       size: '1Gi'
+    configmap:
+      storage:
+        engine: 'mmapv1'
+        mmapv1:
+          smallFiles: true
