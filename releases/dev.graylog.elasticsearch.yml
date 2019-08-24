@@ -17,11 +17,15 @@ spec:
     image: "docker.elastic.co/elasticsearch/elasticsearch"
     imageTag: "6.8.1"
     replicas: 3
+    volumeClaimTemplate:
+      accessModes: ["ReadWriteOnce"]
+      storageClassName: "nfs"
     persistence:
-      enabled: false
+      enabled: true
     resources:
       requests:
         memory: 1024
+        storage: '1Gi'
     esJavaOpts: "-Xmx768m -Xms768m"
-    force_deploy: 23
+    force_deploy: 24
 
