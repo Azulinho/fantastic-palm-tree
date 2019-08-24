@@ -20,6 +20,5 @@ spec:
       size: '1Gi'
     configmap:
       storage:
-        engine: 'mmapv1'
-        mmapv1:
-          smallFiles: true
+        dbPath: '/tmp/mongodb'
+
