@@ -27,5 +27,5 @@ spec:
         memory: 1024
         storage: '1Gi'
     esJavaOpts: "-Xmx768m -Xms768m"
-    force_deploy: 24
+    force_deploy: 25
 
