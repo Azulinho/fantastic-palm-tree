@@ -20,12 +20,14 @@ spec:
     volumeClaimTemplate:
       accessModes: ["ReadWriteOnce"]
       storageClassName: "nfs"
+      resources:
+        requests:
+          storage: '1Gi'
     persistence:
       enabled: true
     resources:
       requests:
         memory: 1024
-        storage: '1Gi'
     esJavaOpts: "-Xmx768m -Xms768m"
-    force_deploy: 26
+    force_deploy: 27
 
