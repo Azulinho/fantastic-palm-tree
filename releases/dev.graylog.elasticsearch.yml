@@ -23,4 +23,5 @@ spec:
       requests:
         memory: 1024
     esJavaOpts: "-Xmx768m -Xms768m"
+    force_deploy: 23
 
