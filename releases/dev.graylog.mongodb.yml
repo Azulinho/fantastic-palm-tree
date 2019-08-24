@@ -12,6 +12,7 @@ spec:
     ref: master
     path: stable/mongodb-replicaset
   values:
+    force_deploy: 23
     replicas: 1
     persistentVolume:
       enabled: true
