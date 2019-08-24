@@ -20,5 +20,5 @@ spec:
       size: '1Gi'
     configmap:
       storage:
-        dbPath: '/tmp/mongodb'
+        dbPath: '/tmp/'
 
