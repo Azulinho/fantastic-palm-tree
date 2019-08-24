@@ -21,6 +21,6 @@ spec:
       enabled: false
     resources:
       requests:
-        memory: 512m
-    esJavaOpts: "-Xmx512m -Xms512m"
+        memory: 1024
+    esJavaOpts: "-Xmx768m -Xms768m"
 
