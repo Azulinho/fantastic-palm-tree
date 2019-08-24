@@ -13,7 +13,7 @@ spec:
     path: stable/mongodb-replicaset
   values:
     force_deploy: 24
-    replicas: 2
+    replicas: 3
     persistentVolume:
       enabled: true
       storageClass: 'nfs'
