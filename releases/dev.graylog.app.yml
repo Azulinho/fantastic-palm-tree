@@ -35,7 +35,7 @@ spec:
         enabled: true
         hosts:
           - graylog.kubernetes.toaster.azulinho.com
-      replicas: 1
+      replicas: 3
       persistence:
         enabled: false
       mongodb:
