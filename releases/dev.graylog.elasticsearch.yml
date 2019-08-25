@@ -15,12 +15,16 @@ spec:
   values:
     imageTag: "6.7.0"
     master:
+      replicas: 1
       persistence:
         enabled: false
     data:
+      replicas: 1
       heapsize: 512m
       persistence:
         enabled: false
+    client:
+      replicas: 1
     resources:
     force_deploy: 29
 
