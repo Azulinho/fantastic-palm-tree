@@ -9,19 +9,18 @@ metadata:
 spec:
   releaseName: dev-graylog-elasticsearch
   chart:
-    git: https://github.com/elastic/helm-charts.git
+    git: https://github.com/helm/charts.git
     ref: master
-    path: elasticsearch
+    path: stable/elasticsearch
   values:
-    esMajorVersion: 6
-    image: "docker.elastic.co/elasticsearch/elasticsearch"
-    imageTag: "6.8.1"
-    replicas: 3
-    persistence:
-      enabled: false
+    imageTag: "6.7.0"
+    master:
+      persistence:
+        enabled: false
+    data:
+      heapsize: 512m
+      persistence:
+        enabled: false
     resources:
-      requests:
-        memory: 1024
-    esJavaOpts: "-Xmx768m -Xms768m"
     force_deploy: 29
 
