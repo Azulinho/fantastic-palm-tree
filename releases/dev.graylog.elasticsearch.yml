@@ -16,15 +16,9 @@ spec:
     esMajorVersion: 6
     image: "docker.elastic.co/elasticsearch/elasticsearch"
     imageTag: "6.8.1"
-    replicas: 3
-    volumeClaimTemplate:
-      accessModes: ["ReadWriteOnce"]
-      storageClassName: "nfs"
-      resources:
-        requests:
-          storage: '1Gi'
+    replicas: 1
     persistence:
-      enabled: true
+      enabled: false
     resources:
       requests:
         memory: 1024

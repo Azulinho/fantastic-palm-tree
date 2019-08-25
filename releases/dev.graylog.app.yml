@@ -37,9 +37,7 @@ spec:
           - graylog.kubernetes.toaster.azulinho.com
       replicas: 1
       persistence:
-        enabled: true
-        storageClass: 'nfs'
-        size: '1Gi'
+        enabled: false
       mongodb:
         uri: "mongodb://dev-graylog-mongodb-mongodb-replicaset-client.dev.svc.cluster.local:27017/graylog?replicaSet=rs0"
       elasticsearch:
