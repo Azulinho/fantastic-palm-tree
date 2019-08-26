@@ -11,3 +11,7 @@ spec:
     git: https://github.com/helm/charts.git
     ref: master
     path: stable/kubernetes-dashboard
+  values:
+    ingress:
+      hosts:
+        - dashboard.kubernetes.toaster.azulinho.com
