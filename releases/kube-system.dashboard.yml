@@ -12,6 +12,7 @@ spec:
     ref: master
     path: stable/kubernetes-dashboard
   values:
+    enableInsecureLogin: true
     ingress:
       enabled: true
       hosts:
