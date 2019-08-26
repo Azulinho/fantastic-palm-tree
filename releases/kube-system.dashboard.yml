@@ -1,0 +1,13 @@
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: kube-system-kubernetes-dashboard
+  namespace: kube-system
+  annotations:
+    flux.weave.works/automated: "true"
+spec:
+  releaseName: kube-system-kubernetes-dashboard
+  chart:
+    git: https://github.com/helm/charts.git
+    ref: master
+    path: stable/kubernetes-dashboard
