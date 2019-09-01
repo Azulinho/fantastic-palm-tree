@@ -20,7 +20,7 @@ spec:
         enabled: false
     data:
       replicas: 1
-      heapsize: 512m
+      heapsize: 1024m
       persistence:
         enabled: false
     client:
